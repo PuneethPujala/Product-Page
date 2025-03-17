@@ -1,0 +1,481 @@
+:root {
+    --primary-color: #FF9900;
+    --secondary-color: #37474F;
+    --text-color: #0f1111;
+    --light-text: #666;
+    --background-color: #f8f8f8;
+    --white: #ffffff;
+    --border-color: #e0e0e0;
+    --success-color: #4CAF50;
+    --warning-color: #FFC107;
+    --danger-color: #F44336;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+}
+
+.navbar-brand img {
+    height: 30px;
+}
+
+.search-box {
+    display: flex;
+    max-width: 400px;
+}
+
+.search-box input {
+    border-radius: 4px 0 0 4px;
+    border-right: none;
+}
+
+.search-box button {
+    border-radius: 0 4px 4px 0;
+    border-left: none;
+}
+
+/* Product Gallery */
+.product-gallery {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.thumbnails {
+    padding: 10px 0;
+}
+
+.thumbnail {
+    cursor: pointer;
+    border: 2px solid var(--border-color);
+    transition: all 0.3s;
+}
+
+.thumbnail.active {
+    border-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+/* Product Details */
+.product-details {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.product-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.product-rating {
+    color: var(--warning-color);
+}
+
+.current-price {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.original-price {
+    font-size: 14px;
+}
+
+.discount {
+    font-weight: bold;
+}
+
+.product-description {
+    line-height: 1.6;
+    color: var(--light-text);
+}
+
+/* Product Options */
+.option-group {
+    margin-bottom: 15px;
+}
+
+.color-options {
+    margin-top: 8px;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid var(--border-color);
+    margin-right: 8px;
+    transition: all 0.3s;
+}
+
+.color-option.active {
+    border-color: var(--primary-color);
+    transform: scale(1.1);
+    box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+.warranty-options {
+    margin-top: 8px;
+}
+
+/* Quantity Selector */
+.quantity-selector {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 150px;
+}
+
+.quantity-btn {
+    background-color: var(--white);
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.quantity-btn:hover {
+    background-color: #f8f8f8;
+}
+
+.quantity-input {
+    border: none;
+    width: 70px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.stock-status {
+    font-size: 14px;
+    color: var(--light-text);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #e68a00;
+    border-color: #e68a00;
+}
+
+.btn-outline-secondary {
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--light-text);
+    color: var(--white);
+}
+
+/* Delivery Options */
+.delivery-options {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+/* Product Info Tabs */
+.nav-tabs {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-link {
+    color: var(--text-color);
+    font-weight: normal;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px 4px 0 0;
+    transition: all 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Feature List */
+.feature-list {
+    padding-left: 20px;
+}
+
+.feature-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Related Products */
+.section-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: contain;
+}
+
+.card-title {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.card-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--white);
+    color: var(--text-color);
+}
+
+footer h5 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 8px;
+}
+
+footer ul li a {
+    color: var(--light-text);
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Cart Summary Enhancements */
+.cart-summary {
+    background-color: #fff;
+    border-radius: 8px 0 0 8px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.cart-header {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.cart-header h5 {
+    color: #0f1111;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.close-btn {
+    color: #007185;
+    font-size: 18px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.close-btn:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+.cart-items-container {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    position: relative;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item-image {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    height: 75px;
+    width: 75px;
+}
+
+.cart-item-details {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.cart-item-title {
+    color: #0f1111;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.cart-item-quantity {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.quantity-control {
+    align-items: center;
+    display: flex;
+    margin-right: 10px;
+}
+
+.quantity-control button {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    color: #0f1111;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.quantity-control input {
+    border: 1px solid #ddd;
+    height: 30px;
+    margin: 0 5px;
+    text-align: center;
+    width: 40px;
+}
+
+.remove-item {
+    color: #b12704;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.remove-item:hover {
+    text-decoration: underline;
+}
+
+.cart-item-price {
+    color: #0f1111;
+    font-weight: 700;
+}
+
+.cart-footer {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.cart-total {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.cart-total span:first-child {
+    color: #666;
+}
+
+.cart-total span:last-child {
+    color: #0f1111;
+    font-weight: 700;
+}
+
+#checkoutBtn {
+    background-color: #ffd814;
+    border: none;
+    color: #0f1111;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+#checkoutBtn:hover {
+    background-color: #f8d307;
+}
+
+.empty-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 30px 0;
+}
+
+.empty-cart i {
+    color: #ddd;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.empty-cart p {
+    color: #666;
+    font-size: 14px;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#checkoutBtn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
